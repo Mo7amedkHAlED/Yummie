@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PopularCollectionViewCell" id="iib-4t-wyU" customClass="PopularCollectionViewCell" customModule="Yummie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8c-9z-N70" customClass="CardView" customModule="Yummie" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2aw-ty-itF">
+                                <rect key="frame" x="8" y="8" width="164" height="284"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Napoletana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cox-Ed-tUZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="4Dg-Sl-KGp">
+                                        <rect key="frame" x="0.0" y="28.5" width="164" height="208"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120 Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-T6-1Si">
+                                        <rect key="frame" x="0.0" y="244.5" width="164" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.85882352939999995" green="0.2009030963" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The dough is comprise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzZ-vL-VvC">
+                                        <rect key="frame" x="0.0" y="267" width="164" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="3vq-qE-Lse"/>
+                            <constraint firstItem="2aw-ty-itF" firstAttribute="leading" secondItem="I8c-9z-N70" secondAttribute="leading" constant="8" id="GKW-Lh-Nwc"/>
+                            <constraint firstAttribute="trailing" secondItem="2aw-ty-itF" secondAttribute="trailing" constant="8" id="Sxy-LS-SXC"/>
+                            <constraint firstItem="2aw-ty-itF" firstAttribute="top" secondItem="I8c-9z-N70" secondAttribute="top" constant="8" id="dx8-ld-1Sx"/>
+                            <constraint firstAttribute="bottom" secondItem="2aw-ty-itF" secondAttribute="bottom" constant="8" id="iWa-Fm-xeK"/>
+                            <constraint firstAttribute="width" constant="180" id="k0u-Dq-vcT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="EBt-2X-Zxh"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="I8c-9z-N70" secondAttribute="bottom" id="Bs3-pc-xOV"/>
+                <constraint firstItem="I8c-9z-N70" firstAttribute="top" secondItem="iib-4t-wyU" secondAttribute="top" id="Kj3-1C-5sD"/>
+                <constraint firstAttribute="trailing" secondItem="I8c-9z-N70" secondAttribute="trailing" id="Zj4-61-zmV"/>
+                <constraint firstItem="I8c-9z-N70" firstAttribute="leading" secondItem="iib-4t-wyU" secondAttribute="leading" id="hWk-W3-uKD"/>
+            </constraints>
+            <size key="customSize" width="180" height="300"/>
+            <point key="canvasLocation" x="757" y="7"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="slide1" width="484" height="457.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

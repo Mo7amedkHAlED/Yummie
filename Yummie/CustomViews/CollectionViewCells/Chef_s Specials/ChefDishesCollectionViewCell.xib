@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefDishesCollectionViewCell" id="tpv-Jq-1tm" customClass="ChefDishesCollectionViewCell" customModule="Yummie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57r-z1-Run" customClass="CardView" customModule="Yummie" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide2" translatesAutoresizingMaskIntoConstraints="NO" id="556-Wq-2R4">
+                                <rect key="frame" x="16" y="16" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="AhJ-b2-p8C"/>
+                                    <constraint firstAttribute="height" constant="64" id="YDk-bt-p6c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JXv-kN-MrV">
+                                <rect key="frame" x="88" y="16" width="226" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jollof Rice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVj-NM-3KG">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jollof Rice is Nigeria's national" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry8-Yv-N6l">
+                                        <rect key="frame" x="0.0" y="21.5" width="226" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,200 Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2E-be-GCC">
+                                        <rect key="frame" x="0.0" y="42.5" width="226" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.8078432083" green="0.0" blue="0.14458908479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="556-Wq-2R4" firstAttribute="leading" secondItem="57r-z1-Run" secondAttribute="leading" constant="16" id="4SY-AY-n5t"/>
+                            <constraint firstItem="JXv-kN-MrV" firstAttribute="bottom" secondItem="556-Wq-2R4" secondAttribute="bottom" id="5gS-bI-PtM"/>
+                            <constraint firstAttribute="trailing" secondItem="JXv-kN-MrV" secondAttribute="trailing" constant="16" id="6VL-7N-DQF"/>
+                            <constraint firstItem="556-Wq-2R4" firstAttribute="top" secondItem="57r-z1-Run" secondAttribute="top" constant="16" id="EQk-ai-b9N"/>
+                            <constraint firstAttribute="bottom" secondItem="556-Wq-2R4" secondAttribute="bottom" constant="16" id="ON5-d2-xmw"/>
+                            <constraint firstItem="JXv-kN-MrV" firstAttribute="centerY" secondItem="556-Wq-2R4" secondAttribute="centerY" id="joq-ZK-MgT"/>
+                            <constraint firstItem="JXv-kN-MrV" firstAttribute="leading" secondItem="556-Wq-2R4" secondAttribute="trailing" constant="8" id="nbG-K8-m0s"/>
+                            <constraint firstAttribute="width" constant="330" id="trg-eg-Gzx"/>
+                            <constraint firstItem="JXv-kN-MrV" firstAttribute="top" secondItem="556-Wq-2R4" secondAttribute="top" id="wRE-zU-BdL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="fVO-ZO-HA2"/>
+            <constraints>
+                <constraint firstItem="57r-z1-Run" firstAttribute="leading" secondItem="tpv-Jq-1tm" secondAttribute="leading" id="8nV-xb-Gfp"/>
+                <constraint firstAttribute="trailing" secondItem="57r-z1-Run" secondAttribute="trailing" id="JP4-h2-Cqa"/>
+                <constraint firstAttribute="bottom" secondItem="57r-z1-Run" secondAttribute="bottom" id="qm3-lS-q5W"/>
+                <constraint firstItem="57r-z1-Run" firstAttribute="top" secondItem="tpv-Jq-1tm" secondAttribute="top" id="rRx-jS-NT7"/>
+            </constraints>
+            <size key="customSize" width="330" height="96"/>
+            <connections>
+                <outlet property="ChefDishesCaloriesLabel" destination="e2E-be-GCC" id="YjM-sw-Y3C"/>
+                <outlet property="ChefDishesDescripeLabel" destination="Ry8-Yv-N6l" id="y7N-cl-Qwo"/>
+                <outlet property="ChefDishesImage" destination="556-Wq-2R4" id="iAn-aH-Rey"/>
+                <outlet property="ChefDishesTitleLabel" destination="dVj-NM-3KG" id="O6g-af-dFY"/>
+            </connections>
+            <point key="canvasLocation" x="340.57971014492756" y="83.705357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="slide2" width="661" height="375.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
